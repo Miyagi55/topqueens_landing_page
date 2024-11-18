@@ -1,4 +1,119 @@
-/* General Styles are the same */
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d0d0d;
+    color: white;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
+    overflow: hidden;
+}
+
+.hero-content {
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #e91e63;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #e91e63, #ff4081);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(233, 30, 99, 0.4);
+    transition: all 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    box-shadow: 0 8px 30px rgba(233, 30, 99, 0.6);
+    transform: scale(1.1);
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://source.unsplash.com/1920x1080/?neon,style') no-repeat center center/cover;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+/* Features Section */
+.features {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #1a1a1a;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #ff4081;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background: #0d0d0d;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(255, 64, 129, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(255, 64, 129, 0.4);
+}
+
+.icon i {
+    font-size: 2rem;
+    color: #ff4081;
+    margin-bottom: 15px;
+}
 
 /* Gallery Section */
 .gallery {
@@ -83,4 +198,13 @@
 .testimonial span {
     font-weight: 600;
     color: #e91e63;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #0d0d0d;
+    color: #e0e0e0;
+    font-size: 0.9rem;
 }
