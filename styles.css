@@ -160,44 +160,114 @@ p {
 }
 
 /* Testimonials Section */
+/* Testimonials Section */
 .testimonials {
     padding: 60px 20px;
-    text-align: center;
+    text-align: center; /* Centers the text elements */
     background: #1a1a1a;
+    display: flex;       /* Ensures proper alignment */
+    flex-direction: column; /* Stacks elements vertically */
+    align-items: center; /* Centers child elements horizontally */
 }
 
+/* Heading Styling */
 .testimonials h2 {
     font-size: 2.5rem;
     color: #ff4081;
     margin-bottom: 40px;
+    text-align: center; /* Extra safety for heading alignment */
 }
 
+/* Testimonial Slider */
 .testimonial-slider {
     display: flex;
     overflow: auto;
     gap: 20px;
     padding: 0 20px;
     scroll-snap-type: x mandatory;
+
+    justify-content: center; /* Centers the slider within the parent */
+    align-items: center;     /* Aligns testimonials vertically */
 }
 
+/* Individual Testimonial Box */
 .testimonial {
-    flex: 0 0 300px;
-    scroll-snap-align: center;
+    flex: 0 0 300px;           /* Fixed width for consistent scrolling */
+    scroll-snap-align: center; /* Centers the testimonials when scrolling */
     padding: 20px;
     background: #0d0d0d;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(255, 64, 129, 0.2);
     color: #e0e0e0;
+    text-align: center;        /* Ensures text inside is centered */
 }
 
+/* Testimonial Text */
 .testimonial p {
     margin-bottom: 15px;
     font-style: italic;
+    text-align: center; /* Centers the paragraph text */
 }
 
+/* Testimonial Author */
 .testimonial span {
     font-weight: 600;
     color: #e91e63;
+    text-align: center; /* Centers the author name */
+    display: block;     /* Ensures proper alignment as a block element */
+}
+
+
+/* Form section */
+.form-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(255, 64, 129, 0.2);
+}
+
+form p {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: #0d0d0d;
+    color: #e0e0e0;
+}
+
+form button {
+    width: 100%;
+    padding: 12px 30px;
+    background: linear-gradient(90deg, #e91e63, #ff4081);
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: linear-gradient(90deg, #ff4081, #e91e63);
 }
 
 /* Footer */
