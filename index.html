@@ -5,34 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TopQueens Agency</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Hero Section -->
-    <section class="hero">
-        <h1>Your Growth, Your Stage, Your Brand.</h1>
-        <p>Join TopQueens Agency and build your personal brand as a digital model.</p>
-        <button id="apply-now" class="cta-button">Apply Now</button>
-    </section>
-
-    <!-- About Section -->
-    <section class="about">
-        <h2>Who We Are</h2>
-        <p>We empower models through innovation and style.</p>
-    </section>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Step into the Spotlight with TopQueens</h1>
+            <p>Empowering digital models to build iconic brands with innovation, style, and growth.</p>
+            <a href="https://example.typeform.com/to/sample" target="_blank" class="cta-button">Get Started</a>
+        </div>
+        <div class="hero-bg"></div>
+    </header>
 
     <!-- Features Section -->
     <section class="features">
-        <div class="feature-card">
-            <h3>Brand Growth</h3>
-            <p>We help you grow your online presence effectively.</p>
-        </div>
-        <div class="feature-card">
-            <h3>Social Media Exposure</h3>
-            <p>Showcase your talent to the world.</p>
-        </div>
-        <div class="feature-card">
-            <h3>Personalized Consultation</h3>
-            <p>Get tailored advice to achieve your goals.</p>
+        <h2>Why Choose Us</h2>
+        <div class="features-container">
+            <div class="feature">
+                <div class="icon">🚀</div>
+                <h3>Brand Acceleration</h3>
+                <p>Fast-track your personal brand growth with our innovative strategies.</p>
+            </div>
+            <div class="feature">
+                <div class="icon">🌟</div>
+                <h3>Global Exposure</h3>
+                <p>Showcase your unique talent and reach a global audience.</p>
+            </div>
+            <div class="feature">
+                <div class="icon">💼</div>
+                <h3>Professional Guidance</h3>
+                <p>Personalized mentorship to turn your passion into success.</p>
+            </div>
         </div>
     </section>
 
@@ -40,46 +44,5 @@
     <footer>
         <p>&copy; 2024 TopQueens Agency. All Rights Reserved.</p>
     </footer>
-
-    <!-- Application Form Modal -->
-    <div id="form-modal" class="modal">
-        <div class="modal-content">
-            <span id="close-modal" class="close-button">&times;</span>
-            <h2>Apply to TopQueens Agency</h2>
-            <form id="application-form" name="application-form" method="POST" data-netlify="true">
-                <!-- Hidden input for Netlify form name -->
-                <input type="hidden" name="form-name" value="application-form">
-
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="age">Age</label>
-                <input type="number" id="age" name="age" required>
-                
-                <label for="country">Country</label>
-                <input type="text" id="country" name="country" required>
-                
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="ig-link">Instagram Link</label>
-                <input type="url" id="ig-link" name="ig-link" required>
-                
-                <label for="cellphone">Cellphone Model</label>
-                <input type="text" id="cellphone" name="cellphone" required>
-                
-                <fieldset>
-                    <legend>Exposure Options</legend>
-                    <label><input type="checkbox" name="exposure" value="Full Skin Exposure"> Full Skin Exposure</label>
-                    <label><input type="checkbox" name="exposure" value="Faceless"> Faceless</label>
-                    <label><input type="checkbox" name="exposure" value="Lingerie Only"> Lingerie Only</label>
-                </fieldset>
-                
-                <button type="submit" class="submit-button">Submit</button>
-            </form>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
