@@ -14,9 +14,8 @@
         <div class="hero-content">
             <h1>TopQueens Agency</h1>
             <p>Empoderamos a nuestras modelos digitales para construir marcas personales icónicas con innovación, estilo y crecimiento sostenido.</p>
-            <a href="form.html" target="_blank" class="cta-button">¡Aplica ahora!</a>
+            <button id="open-form" class="cta-button">¡Aplica ahora!</button>
         </div>
-        <div class="hero-bg"></div>
     </header>
 
     <!-- Features Section -->
@@ -31,12 +30,12 @@
             <div class="feature">
                 <div class="icon"><i class="fas fa-globe"></i></div>
                 <h3>Target Anglosajón</h3>
-                <p>Nuestro público objetivo esta dirigido 100% al mercado de USA, Canada, Inglaterra y Australia.</p>
+                <p>Nuestro público objetivo está dirigido 100% al mercado de USA, Canadá, Inglaterra y Australia.</p>
             </div>
             <div class="feature">
                 <div class="icon"><i class="fas fa-user-tie"></i></div>
                 <h3>Guía profesional y segura</h3>
-                <p>Acompañamiento personalizado para que jamás te sientas sola en el camino de construir tu audiencia</p>
+                <p>Mentoría y acompañamiento personalizado para que jamás te sientas sola en el camino de construir tu éxito.</p>
             </div>
         </div>
     </section>
@@ -44,15 +43,15 @@
     <!-- Gallery Section -->
     <section class="gallery">
         <div class="gallery-text">
-            <h2>Your Story in Pictures</h2>
-            <p>Every image tells a story. Here's a glimpse of the bold, confident, and dynamic world we're creating with our models.</p>
-            <a href="form.html" target="_blank" class="cta-button">Join Our Gallery</a>
+            <h2>Tu historia en imágenes</h2>
+            <p>Cada imagen cuenta una historia. Aquí tienes un vistazo al mundo audaz, confiado y dinámico que estamos creando con nuestras modelos.</p>
+            <button id="open-form" class="cta-button">¡Quiero trabajar ya!</button>
         </div>
         <div class="gallery-grid">
-            <img src="https://source.unsplash.com/400x400/?model,glamour" alt="Model 1">
-            <img src="https://source.unsplash.com/400x400/?fashion,style" alt="Model 2">
-            <img src="https://source.unsplash.com/400x400/?beauty,portrait" alt="Model 3">
-            <img src="https://source.unsplash.com/400x400/?luxury,photoshoot" alt="Model 4">
+            <img src="assets/TopQueens images/image (10).jpg" alt="Model 1">
+            <img src="assets/TopQueens images/image (11).jpg" alt="Model 2">
+            <img src="assets/TopQueens images/image (12).jpg" alt="Model 3">
+            <img src="assets/TopQueens images/image (13).jpg" alt="Model 4">
         </div>
     </section>
 
@@ -65,7 +64,7 @@
                 <span>– Emily R.</span>
             </div>
             <div class="testimonial">
-                <p>"La exposición y las conexiones que obtuve aquí son invaluables. Altamente recomendable!"</p>
+                <p>"La exposición y las conexiones que obtuve aquí son invaluables. ¡Altamente recomendable!"</p>
                 <span>– Sarah T.</span>
             </div>
             <div class="testimonial">
@@ -75,9 +74,29 @@
         </div>
     </section>
 
+    <!-- Modal for Form -->
+    <div id="form-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-form" class="close">&times;</span>
+            <h2>¡Aplica ahora!</h2>
+            <p>Completa el formulario para unirte a nuestro equipo.</p>
+            <form name="contact" method="POST" netlify>
+                <p>
+                    <label>Nombre <input type="text" name="name" required></label>
+                </p>
+                <p>
+                    <label>Email <input type="email" name="email" required></label>
+                </p>
+                <p>
+                    <button type="submit" class="cta-button">Enviar</button>
+                </p>
+            </form>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 TopQueens Agency. All Rights Reserved.</p>
+        <p>&copy; 2024 TopQueens Agency. Todos los derechos reservados.</p>
     </footer>
     <script src="script.js"></script>
 </body>
