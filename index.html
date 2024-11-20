@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <link rel="icon" href="assets/image (9).ico" type="image/x-icon">
 
     <!-- Meta Descripción -->
@@ -13,8 +12,6 @@
     <meta property="og:image" content="assets/TopQueens images/image (18).jpg"> <!-- Imagen atractiva para la vista previa -->
     <meta property="og:url" content="https://dainty-faloodeh-227638.netlify.app/"> <!-- Cambia al enlace de tu sitio -->
     <meta property="og:type" content="website">
-
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TopQueens Agency</title>
@@ -22,7 +19,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <!-- Hero Section -->
     <header class="hero">
@@ -89,27 +85,92 @@
         </div>
     </section>
 
-    <!-- Modal for Form -->
-    <div id="form-modal" class="modal">
-        <div class="modal-content">
-            <span id="close-form" class="close">&times;</span>
-            <h2>¡Aplica ahora!</h2>
-            <p>Completa el formulario para unirte a nuestro equipo.</p>
-            <form name="contact" method="POST" netlify>
-                <p>
-                    <label>Nombre <input type="text" name="name" required></label>
-                </p>
-                <p>
-                    <label>Email <input type="email" name="email" required></label>
-                </p>
-                <p>
-                    <button type="submit" class="cta-button">Enviar</button>
-                </p>
-            </form>
-        </div>
-    </div>
 
-    <!-- Footer -->
+
+
+
+    <!-- Modal for Form ----------------------------------------------> 
+    <div id="form-modal" class="modal">
+    <div class="modal-content">
+        <span id="close-form" class="close">&times;</span>
+        <h2>¡Aplica ahora!</h2>
+        <p>Completa el formulario para unirte a nuestro equipo.</p>
+        <form name="contact" method="POST" netlify>
+            <div class="form-group">
+                <label for="name">Nombre completo</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Número de teléfono</label>
+                <div class="phone-input">
+                    <select id="country-code" name="country-code" required>
+                        <option value="+54" data-country="ar">🇦🇷 +54 (Argentina)</option>
+                        <option value="+1" data-country="ag">🇦🇬 +1 (Antigua y Barbuda)</option>
+                        <option value="+1" data-country="bs">🇧🇸 +1 (Bahamas)</option>
+                        <option value="+1" data-country="bb">🇧🇧 +1 (Barbados)</option>
+                        <option value="+501" data-country="bz">🇧🇿 +501 (Belice)</option>
+                        <option value="+591" data-country="bo">🇧🇴 +591 (Bolivia)</option>
+                        <option value="+55" data-country="br">🇧🇷 +55 (Brasil)</option>
+                        <option value="+1" data-country="ca">🇨🇦 +1 (Canadá)</option>
+                        <option value="+56" data-country="cl">🇨🇱 +56 (Chile)</option>
+                        <option value="+57" data-country="co">🇨🇴 +57 (Colombia)</option>
+                        <option value="+506" data-country="cr">🇨🇷 +506 (Costa Rica)</option>
+                        <option value="+53" data-country="cu">🇨🇺 +53 (Cuba)</option>
+                        <option value="+1" data-country="dm">🇩🇲 +1 (Dominica)</option>
+                        <option value="+1" data-country="do">🇩🇴 +1 (República Dominicana)</option>
+                        <option value="+593" data-country="ec">🇪🇨 +593 (Ecuador)</option>
+                        <option value="+503" data-country="sv">🇸🇻 +503 (El Salvador)</option>
+                        <option value="+1" data-country="us">🇺🇸 +1 (Estados Unidos)</option>
+                        <option value="+592" data-country="gy">🇬🇾 +592 (Guyana)</option>
+                        <option value="+504" data-country="hn">🇭🇳 +504 (Honduras)</option>
+                        <option value="+1" data-country="jm">🇯🇲 +1 (Jamaica)</option>
+                        <option value="+1" data-country="kn">🇰🇳 +1 (San Cristóbal y Nieves)</option>
+                        <option value="+1" data-country="lc">🇱🇨 +1 (Santa Lucía)</option>
+                        <option value="+52" data-country="mx">🇲🇽 +52 (México)</option>
+                        <option value="+505" data-country="ni">🇳🇮 +505 (Nicaragua)</option>
+                        <option value="+507" data-country="pa">🇵🇦 +507 (Panamá)</option>
+                        <option value="+595" data-country="py">🇵🇾 +595 (Paraguay)</option>
+                        <option value="+51" data-country="pe">🇵🇪 +51 (Perú)</option>
+                        <option value="+1" data-country="pr">🇵🇷 +1 (Puerto Rico)</option>
+                        <option value="+1" data-country="tt">🇹🇹 +1 (Trinidad y Tobago)</option>
+                        <option value="+598" data-country="uy">🇺🇾 +598 (Uruguay)</option>
+                        <option value="+58" data-country="ve">🇻🇪 +58 (Venezuela)</option>
+
+                        <!-- Agregar más países aquí -->
+                    </select>
+                    <input type="tel" id="phone" name="phone" placeholder="Tu número" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="social-link">Link de red social (Twitter o Instagram)</label>
+                <input type="url" id="social-link" name="social-link" placeholder="https://">
+            </div>
+            <div class="form-group">
+                <label>¿Tienes ya una página de OF creada y verificada?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="of-page" value="yes" required> Sí</label>
+                    <label><input type="radio" name="of-page" value="no" required> No</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Tipo de contenido con el que estás cómoda</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="content-type" value="full" required> Full desn.</label>
+                    <label><input type="radio" name="content-type" value="faceless" required> Faceless</label>
+                    <label><input type="radio" name="content-type" value="lingerie" required> Solo lencer.</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="motivation">Escribe el motivo por el cual quieres aplicar a nuestra agencia</label>
+                <textarea id="motivation" name="motivation" rows="4" placeholder="Escribe tu motivo aquí..." required></textarea>
+            </div>
+            <button type="submit" class="cta-button">Enviar</button>
+        </form>
+    </div>
+</div>
+
+
+    <!-- Footer ------------------------>
     <footer>
         <p>&copy; 2024 TopQueens Agency. Todos los derechos reservados.</p>
     </footer>
