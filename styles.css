@@ -363,3 +363,99 @@ body {
 .close:hover {
     color: #f00;
 }
+
+
+
+/* Media Query para pantallas pequeñas ----------------------*/
+@media screen and (max-width: 768px) {
+    /* Ajustes generales */
+    body {
+        font-size: 14px; /* Reducir el tamaño general del texto */
+    }
+
+    /* Hero Section */
+    .hero-content h1 {
+        font-size: 2rem; /* Ajustar el tamaño del título */
+    }
+
+    .hero-content p {
+        max-width: 90%; /* Ensanchar el texto para dispositivos móviles */
+        font-size: 1rem; /* Reducir tamaño del texto */
+    }
+
+    .hero-content .cta-button {
+        font-size: 1rem; /* Reducir tamaño del botón */
+        padding: 10px 20px; /* Ajustar padding */
+    }
+
+    /* Features Section */
+    .features-container {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        align-items: center; /* Centrar elementos */
+    }
+
+    .feature {
+        max-width: 90%; /* Limitar el ancho */
+        margin-bottom: 20px; /* Añadir espacio entre elementos */
+    }
+
+    .feature h3 {
+        font-size: 1.2rem; /* Reducir tamaño de encabezados */
+    }
+
+    /* Gallery Section */
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en móviles */
+        gap: 10px; /* Reducir espacio entre imágenes */
+    }
+
+    .gallery-grid img {
+        width: 100%; /* Hacer que las imágenes ocupen todo el ancho disponible */
+        height: auto; /* Mantener proporción */
+    }
+
+    .gallery-text h2 {
+        font-size: 1.5rem; /* Reducir tamaño del encabezado */
+    }
+
+    .gallery-text p {
+        font-size: 0.9rem; /* Reducir texto explicativo */
+    }
+
+    .gallery-text .cta-button {
+        font-size: 1rem; /* Reducir tamaño del botón */
+        padding: 8px 16px; /* Ajustar padding */
+    }
+
+    /* Testimonials Section */
+    .testimonials h2 {
+        font-size: 1.5rem; /* Reducir tamaño de encabezado */
+    }
+
+    .testimonial {
+        padding: 10px; /* Reducir padding de cada testimonial */
+    }
+
+    .testimonial-slider {
+        gap: 10px; /* Menor espacio entre testimonials */
+    }
+
+    /* Modal */
+    .modal-content {
+        width: 90%; /* Aumentar el ancho del modal */
+        padding: 15px; /* Reducir padding */
+    }
+
+    .modal-content h2 {
+        font-size: 1.5rem; /* Ajustar tamaño de encabezado en el modal */
+    }
+
+    .modal-content p {
+        font-size: 1rem; /* Ajustar texto del modal */
+    }
+
+    .modal-content .cta-button {
+        font-size: 1rem; /* Reducir tamaño del botón */
+        padding: 10px 16px; /* Ajustar padding */
+    }
+}
