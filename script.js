@@ -26,3 +26,9 @@ window.addEventListener('click', (e) => {
         modal.style.display = 'none';
     }
 });
+
+document.querySelector('.toggle-text').addEventListener('click', () => {
+  document.querySelector('.privacy-text').style.display = document.querySelector('.privacy-text').style.display === 'none' ? 'block' : 'none';
+});
+
+

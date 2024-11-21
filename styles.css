@@ -81,6 +81,8 @@ p {
     z-index: 0;
 }
 
+
+
 /* Features Section ------------------*/
 .features {
     padding: 60px 20px;
@@ -110,6 +112,18 @@ p {
     text-align: center;
     box-shadow: 0 4px 15px rgba(255, 64, 129, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature p {
+    margin-bottom: 20px; /* Ajusta el espacio según necesites */
+    vertical-align: middle;
+    text-align: left;
+}
+
+.feature h3 {
+    margin-bottom: 30px; /* Ajusta el espacio según necesites */
+    vertical-align: middle;
+
 }
 
 .feature:hover {
@@ -147,8 +161,10 @@ p {
 
 .gallery-text p {
     font-size: 1.1rem;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     color: #e0e0e0;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .gallery-grid {
@@ -294,7 +310,104 @@ form button:hover {
 
 
 
+/* Legal Commitment Section */
+.legal-commitment {
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
 
+.legal-commitment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+    gap: 2rem;
+}
+
+.legal-image {
+    width: 100%;
+    max-width: 400px;
+}
+
+.legal-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.legal-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(255, 64, 129, 0.4);
+}
+
+.legal-content {
+    text-align: center;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.legal-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.legal-content h3 {
+    font-size: 1rem;
+    margin-bottom: 1.4rem;
+}
+
+
+.legal-guarantees {
+    text-align: left;
+}
+
+.legal-icon {
+    text-align: center;
+    font-size: 3.5rem; /* Aumentar el tamaño de la fuente */
+    margin-bottom: 1rem;
+    margin-right: 10px;
+    color: #e91e63;
+}
+
+@media (max-width: 768px) {
+    .legal-icon {
+        font-size: 2.5rem; /* Tamaño más pequeño en pantallas más pequeñas */
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .legal-commitment-container {
+        gap: 1.5rem;
+    }
+
+    .legal-image {
+        max-width: 100%;
+    }
+
+    .legal-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .legal-guarantees li {
+        padding-left: 0;
+    }
+
+    .legal-guarantees li:before {
+        display: none;
+    }
+}
 
 
 /* Footer ------------------*/
@@ -390,7 +503,7 @@ body {
     /* Features Section */
     .features-container {
         flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
-        align-items: center; /* Centrar elementos */
+        align-items: start; /* Centrar elementos */
     }
 
     .feature {
@@ -403,28 +516,51 @@ body {
     }
 
     /* Gallery Section */
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columnas en móviles */
-        gap: 10px; /* Reducir espacio entre imágenes */
-    }
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+}
 
-    .gallery-grid img {
-        width: 100%; /* Hacer que las imágenes ocupen todo el ancho disponible */
-        height: auto; /* Mantener proporción */
-    }
+.gallery-text {
+    max-width: 100%;
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
 
-    .gallery-text h2 {
-        font-size: 1.5rem; /* Reducir tamaño del encabezado */
-    }
+.gallery-text h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
 
-    .gallery-text p {
-        font-size: 0.9rem; /* Reducir texto explicativo */
-    }
+.gallery-text p {
+    font-size: 1rem;
+    margin-right: 0;
+    margin-left: 0;
+}
 
-    .gallery-text .cta-button {
-        font-size: 1rem; /* Reducir tamaño del botón */
-        padding: 8px 16px; /* Ajustar padding */
-    }
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(255, 64, 129, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(255, 64, 129, 0.4);
+}
 
     /* Testimonials Section */
     .testimonials h2 {
@@ -570,47 +706,38 @@ label {
     text-align: left;  /* Explicitly set left alignment */
 }
 
-/* Input Styles */
+/* Input size adjustments */
 .form-group input[type="text"],
 .form-group input[type="tel"],
-.form-group input[type="url"],
+.form-group input[type="url"] {
+    width: 100%;
+    max-width: 400px;
+    height: 40px; /* Reduced height */
+    padding: 8px 12px; /* Adjusted padding */
+    background: #0d0d0d;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: #e0e0e0;
+    font-size: 0.9rem;
+}
+
 .form-group textarea {
     width: 100%;
-    padding: 12px;
-    background: #0d0d0d;
-    border: 1px solid #333;
-    border-radius: 8px;
-    color: #e0e0e0;
-    font-size: 1rem;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    max-width: 400px;
+    height: 100px; /* Fixed height */
+    padding: 8px 12px;
+    resize: none; /* Prevents resizing */
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-    border-color: #e91e63;
-    outline: none;
-    box-shadow: 0 0 0 2px rgba(233, 30, 99, 0.2);
-}
-
-/* Phone Input Specific Styles */
-.phone-input {
-    display: flex;
-    gap: 10px;
-}
-
+/* Phone input adjustments */
 .phone-input select {
-    width: 120px;
-    padding: 12px;
-    background: #0d0d0d;
-    border: 1px solid #333;
-    border-radius: 8px;
-    color: #e0e0e0;
-    font-size: 1rem;
-    cursor: pointer;
+    width: 110px; /* Reduced width */
+    height: 40px; /* Match other inputs */
+    padding: 0 8px;
 }
 
 .phone-input input[type="tel"] {
-    flex: 1;
+    height: 40px; /* Match other inputs */
 }
 
 /* Radio Groups */
@@ -668,6 +795,21 @@ textarea {
 .modal-content .cta-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(233, 30, 99, 0.4);
+}
+
+.toggle-text {
+  color: #e91e63;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.toggle-text:hover {
+  color: #ff4081;
+}
+
+.privacy-text {
+  margin-top: 10px;
+  font-size: 0.9rem;
 }
 
 /* Mobile Responsive Adjustments */
@@ -731,4 +873,32 @@ textarea {
         padding: 10px;
         font-size: 0.9rem;
     }
+}
+
+
+/* Footer social icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    color: #e0e0e0;
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #e91e63;
+    transform: translateY(-3px);
+}
+
+/* Add spacing to footer */
+footer {
+    padding: 30px 20px;
+    text-align: center;
+    background: #1a1a1a;
+    color: #e0e0e0;
 }
