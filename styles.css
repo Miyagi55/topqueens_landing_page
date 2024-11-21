@@ -15,6 +15,43 @@ p {
     margin: 10px 0;
 }
 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Nav bar Section  ------------------*/
+html {
+    scroll-behavior: smooth;
+}
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #e91e63;
+    color: black;
+}
+
+.section {
+    padding: 70px 15px 15px;
+    min-height: 100vh;
+}
+
 /* Hero Section  ------------------*/
 .hero {
     position: relative;
@@ -69,6 +106,7 @@ p {
     box-shadow: 0 8px 30px rgba(233, 30, 99, 0.6);
     transform: scale(1.1);
 }
+
 
 .hero-bg {
     position: absolute;
@@ -251,6 +289,21 @@ p {
     display: block;     /* Ensures proper alignment as a block element */
 }
 
+.testimonial {
+    text-align: center; /* Alinear contenido al centro */
+    margin-bottom: 20px; /* Espaciado entre testimonios */
+}
+
+.testimonial-img {
+    width: 80px; /* Tamaño de la imagen */
+    height: 80px; /* Tamaño de la imagen */
+    border-radius: 50%; /* Hace la imagen circular */
+    object-fit: cover; /* Ajusta la imagen para llenar el contenedor */
+    margin-bottom: 10px; /* Espaciado entre la imagen y el texto */
+    border: 2px solid #ccc; /* Borde decorativo opcional */
+}
+
+
 
 
 
@@ -366,6 +419,7 @@ form button:hover {
 
 .legal-guarantees {
     text-align: left;
+    margin-bottom: 1.4rem;
 }
 
 .legal-icon {
@@ -402,6 +456,7 @@ form button:hover {
 
     .legal-guarantees li {
         padding-left: 0;
+
     }
 
     .legal-guarantees li:before {
@@ -882,6 +937,7 @@ textarea {
     justify-content: center;
     gap: 20px;
     margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .social-icon {
@@ -902,3 +958,4 @@ footer {
     background: #1a1a1a;
     color: #e0e0e0;
 }
+

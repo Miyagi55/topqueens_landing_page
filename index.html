@@ -20,8 +20,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="navbar">
+        <a href="#hero">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#legal">Legal</a>
+
+    </div>
     <!-- Hero Section -->
-    <header class="hero">
+    <header id='hero' class="hero">
         <div class="hero-content">
             <h1>TopQueens Agency</h1>
             <p>Una agencia de marketing digital con visión mundial que impulsa a creadoras de contenido de habla hispana hacia la excelencia, estratégicamente diseñada para posicionarlas en la élite del 1%.</p>
@@ -34,7 +41,7 @@
     <!-- Features Section -->
     <section class="features">
         <h2>¿Por qué trabajar con nosotros?</h2>
-        <div class="features-container">
+        <div id='servicios' class="features-container">
             <div class="feature">
                 <div class="icon"><i class="fas fa-rocket"></i></div>
                 <h3 id='first-one'>Gestión Completa con Profesionalismo</h3>
@@ -74,27 +81,31 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="testimonials">
-        <h2>¿Qué dicen nuestras modelos?</h2>
-        <div class="testimonial-slider">
-            <div class="testimonial">
-                <p>"Unirme a TopQueens fue la mejor decisión para mi carrera. Su orientación es inigualable"</p>
-                <span>– Danna F.</span>
-            </div>
-            <div class="testimonial">
-                <p>"La exposición y las conexiones que obtuve aquí fueron únicas. Es altamente recomendable"</p>
-                <span>– Laura M.</span>
-            </div>
-            <div class="testimonial">
-                <p>"TopQueens me ayudó a convertir mi pasión en una marca próspera... ¡Eternamente agradecida!"</p>
-                <span>– Mia L.</span>
-            </div>
+    <section id="testimonios" class="testimonials">
+    <h2>¿Qué dicen nuestras asociadas?</h2>
+    <div class="testimonial-slider">
+        <div class="testimonial">
+            <img src="assets/TopQueens images/danna.jpg" alt="Danna F." class="testimonial-img">
+            <p>"Unirme a TopQueens fue la mejor decisión para mi carrera. Su orientación es inigualable"</p>
+            <span>– Danna F.</span>
         </div>
-    </section>
+        <div class="testimonial">
+            <img src="assets/TopQueens images/laura.jpg" alt="Laura M." class="testimonial-img">
+            <p>"La exposición y las conexiones que obtuve aquí fueron únicas. Es altamente recomendable"</p>
+            <span>– Laura M.</span>
+        </div>
+        <div class="testimonial">
+            <img src="assets/TopQueens images/mia.jpg" alt="Mia L." class="testimonial-img">
+            <p>"TopQueens me ayudó a convertir mi pasión en una marca próspera... ¡Eternamente agradecida!"</p>
+            <span>– Mia L.</span>
+        </div>
+    </div>
+</section>
+
 
     <!-- Legal Commitment Section -->
-    <section class="legal-commitment">
-        <div class="legal-commitment-container">
+    <section id="legal" class="legal-commitment">
+        <div  class="legal-commitment-container">
             <div class="legal-image">
                 <img src="assets/TopQueens images/king3.jpg" alt="Legal Protection">
             </div>
@@ -112,6 +123,7 @@
                 </ul>
             </div>
         </div>
+        <button id="open-form" class="cta-button">Empezar ahora</button>
     </section>
 
 
@@ -128,7 +140,7 @@
                 <input type="text" id="name" name="name" required>
             </div>
             <div class="form-group">
-                <label for="phone">Número de teléfono</label>
+                <label for="phone">Número de teléfono (Selecciona el código de tu pais primero)</label>
                 <div class="phone-input">
                     <select id="country-code" name="country-code" required>
                         <option value="+54" data-country="ar">🇦🇷 +54 (Argentina)</option>
@@ -215,7 +227,9 @@
 
     <!-- Footer ------------------------>
     <footer>
+    <h3>Contáctanos</h3>
     <div class="social-icons">
+        
         <a href="https://twitter.com/yourprofile" target="_blank" class="social-icon">
             <i class="fab fa-x-twitter"></i>
         </a>
