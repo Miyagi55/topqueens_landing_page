@@ -66,11 +66,17 @@ html {
 
 .hero-content {
     z-index: 1;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+
 }
 
 .hero-content p {
     max-width: 600px; /* Ajusta el ancho máximo del texto */
-    margin: 0 auto; /* Centra el texto horizontalmente */
+    margin-bottom: 2rem;; /* Centra el texto horizontalmente */
     text-align: justify; /* Justifica el texto */
     line-height: 1.6; /* Mejora la legibilidad */
     font-size: 1.2rem; /* Ajusta el tamaño de la fuente */
@@ -80,7 +86,7 @@ html {
     font-size: 3rem;
     font-weight: 700;
     color: #e91e63;
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
 }
 
 .hero p {
@@ -90,7 +96,7 @@ html {
 }
 
 .cta-button {
-    display: inline-block;
+    display: 1rem 2rem;
     padding: 15px 30px;
     background: linear-gradient(135deg, #e91e63, #ff4081);
     color: white;
@@ -117,6 +123,88 @@ html {
     background: url('https://source.unsplash.com/1920x1080/?neon,style') no-repeat center center/cover;
     opacity: 0.3;
     z-index: 0;
+}
+
+.slider-container {
+    flex: 1;
+    position: relative;
+    max-width: 600px;
+    margin: 0 2rem;
+}
+
+.slider {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.arrow {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+}
+
+.arrow:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.slider-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.indicator.active {
+    background: white;
 }
 
 
@@ -438,6 +526,32 @@ form button:hover {
 
 /* Media Queries */
 @media (max-width: 768px) {
+     .hero {
+        flex-direction: column;
+    }
+
+    .hero-content {
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .hero-content p {
+        margin: 0 auto 2rem;
+    }
+
+    .cta-button {
+        margin: 0 auto;
+    }
+
+    .slider-container {
+        margin: 2rem 0;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .slider {
+        height: 200px;
+    }
     .gallery-grid {
         grid-template-columns: 1fr;
     }

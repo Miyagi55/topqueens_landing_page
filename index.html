@@ -15,7 +15,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TopQueens Agency</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -29,14 +29,41 @@
     </div>
     <!-- Hero Section -->
     <header id='hero' class="hero">
-        <div class="hero-content">
-            <h1>TopQueens Agency</h1>
-            <p>Una agencia de marketing digital con visión mundial que impulsa a creadoras de contenido de habla hispana hacia la excelencia, estratégicamente diseñada para posicionarlas en la élite del 1%.</p>
-            <button id="open-form" class="cta-button">Aplicar de forma segura</button>
+    <div class="hero-content">
+        <h1>TopQueens Agency</h1>
+        <p>Una agencia de marketing digital con alcance mundial que impulsa a creadoras de contenido de habla hispana hacia la excelencia, estratégicamente diseñada para posicionarlas en la élite del 1%.</p>
+        <button id="open-form" class="cta-button">Aplicar de forma segura</button>
+    </div>
+    
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide active">
+                <img src="assets/TopQueens images/slide1.jpg" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="assets/TopQueens images/slide2.jpg" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="assets/TopQueens images/slide3.jpg" alt="Slide 3">
+            </div>
         </div>
-
         
-    </header>
+        <div class="slider-arrows">
+            <button class="arrow" onclick="previousSlide()">←</button>
+            <button class="arrow" onclick="nextSlide()">→</button>
+        </div>
+        
+        <div class="slider-indicators">
+            <span class="indicator active" onclick="goToSlide(0)"></span>
+            <span class="indicator" onclick="goToSlide(1)"></span>
+            <span class="indicator" onclick="goToSlide(2)"></span>
+        </div>
+    </div>
+</header>
+
+
+
+
 
     <!-- Features Section -->
     <section class="features">
@@ -85,17 +112,20 @@
     <h2>¿Qué dicen nuestras asociadas?</h2>
     <div class="testimonial-slider">
         <div class="testimonial">
-            <img src="assets/TopQueens images/danna.jpg" alt="Danna F." class="testimonial-img">
+                <!-- image in testimonials off
+<img src="assets/TopQueens images/danna.jpg" alt="Danna F." class="testimonial-img">-->
             <p>"Unirme a TopQueens fue la mejor decisión para mi carrera. Su orientación es inigualable"</p>
             <span>– Danna F.</span>
         </div>
         <div class="testimonial">
-            <img src="assets/TopQueens images/laura.jpg" alt="Laura M." class="testimonial-img">
+            <!-- image in testimonials off
+            <img src="assets/TopQueens images/laura.jpg" alt="Laura M." class="testimonial-img">-->
             <p>"La exposición y las conexiones que obtuve aquí fueron únicas. Es altamente recomendable"</p>
             <span>– Laura M.</span>
         </div>
         <div class="testimonial">
-            <img src="assets/TopQueens images/mia.jpg" alt="Mia L." class="testimonial-img">
+            <!-- image in testimonials off
+            <img src="assets/TopQueens images/mia.jpg" alt="Mia L." class="testimonial-img">-->
             <p>"TopQueens me ayudó a convertir mi pasión en una marca próspera... ¡Eternamente agradecida!"</p>
             <span>– Mia L.</span>
         </div>
@@ -230,16 +260,16 @@
     <h3>Contáctanos</h3>
     <div class="social-icons">
         
-        <a href="https://twitter.com/yourprofile" target="_blank" class="social-icon">
+        <a href="https://twitter.com/CepedaAlli36165" target="_blank" class="social-icon">
             <i class="fab fa-x-twitter"></i>
         </a>
-        <a href="https://instagram.com/yourprofile" target="_blank" class="social-icon">
+        <a href="https://instagram.com/topqagency" target="_blank" class="social-icon">
             <i class="fab fa-instagram"></i>
         </a>
-        <a href="https://t.me/yourprofile" target="_blank" class="social-icon">
+        <a href="https://t.me/suntzu_dev" target="_blank" class="social-icon">
             <i class="fab fa-telegram"></i>
         </a>
-        <a href="https://wa.me/yournumber" target="_blank" class="social-icon">
+        <a href="https://wa.me/0958746176" target="_blank" class="social-icon">
             <i class="fab fa-whatsapp"></i>
         </a>
     </div>
