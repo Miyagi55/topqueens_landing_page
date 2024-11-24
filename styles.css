@@ -87,6 +87,7 @@ html {
     font-weight: 700;
     color: #e91e63;
     margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 .hero p {
@@ -130,6 +131,7 @@ html {
     position: relative;
     max-width: 600px;
     margin: 0 2rem;
+    margin-top: 1.5rem;
 }
 
 .slider {
@@ -547,6 +549,7 @@ form button:hover {
         margin: 2rem 0;
         width: 100%;
         max-width: 100%;
+        margin-top: 1.5rem; 
     }
 
     .slider {
